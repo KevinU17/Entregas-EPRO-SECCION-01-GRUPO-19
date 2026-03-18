@@ -7,17 +7,24 @@
 </head>
 <body>
 
+<!-- Usuario logueado -->
+<div class="user">
+    Usuario: Admin | Rol: Administrador
+</div>
+
 <header>
     <h1>Plataforma de Gestión Documental</h1>
     <p>Control de versiones, permisos y flujo de aprobación</p>
 </header>
 
-<section class="login">
-    <h2>Iniciar Sesión</h2>
-    <input type="text" placeholder="Usuario">
-    <input type="password" placeholder="Contraseña">
-    <button>Ingresar</button>
-</section>
+<nav>
+    <ul>
+        <li>Inicio</li>
+        <li>Documentos</li>
+        <li>Subir</li>
+        <li>Usuarios</li>
+    </ul>
+</nav>
 
 <section class="upload">
     <h2>Subir Documento</h2>
@@ -26,11 +33,12 @@
 </section>
 
 <section class="documents">
-    <h2>Documentos</h2>
+    <h2>Gestión de Documentos</h2>
 
     <div class="doc">
         <p><strong>Contrato.pdf</strong></p>
         <span>Versión: 2</span>
+        <span class="status aprobado">Aprobado</span><br><br>
         <button>Ver</button>
         <button>Aprobar</button>
     </div>
@@ -38,6 +46,7 @@
     <div class="doc">
         <p><strong>Informe.docx</strong></p>
         <span>Versión: 1</span>
+        <span class="status pendiente">Pendiente</span><br><br>
         <button>Ver</button>
         <button>Editar</button>
     </div>
