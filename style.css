@@ -215,3 +215,43 @@ tbody tr:hover {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* ================= LAYOUT DASHBOARD ================= */
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    color: #1abc9c;
+}
+
+/* Contenido */
+.main {
+    flex: 1;
+    padding: 20px;
+}

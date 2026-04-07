@@ -7,83 +7,95 @@
 </head>
 <body>
 
-<!-- Usuario logueado -->
-<div class="user">
-    Usuario: Admin | Rol: Administrador
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>GestiónDoc</h2>
+        <ul>
+            <li>🏠 Inicio</li>
+            <li>📄 Documentos</li>
+            <li>⬆ Subir</li>
+            <li>👤 Usuarios</li>
+            <li>📊 Bitácora</li>
+        </ul>
+    </aside>
+
+    <!-- Contenido -->
+    <main class="main">
+
+        <!-- Usuario -->
+        <div class="user">
+            Usuario: Admin | Rol: Administrador
+        </div>
+
+        <header>
+            <h1>Plataforma de Gestión Documental</h1>
+            <p>Control de versiones, permisos y flujo de aprobación</p>
+        </header>
+
+        <!-- Subir documento -->
+        <section class="upload">
+            <h2>Subir Documento</h2>
+            <input type="file">
+            <button>Subir</button>
+        </section>
+
+        <!-- Tabla -->
+        <section class="documents">
+            <h2>Gestión de Documentos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Versión</th>
+                        <th>Estado</th>
+                        <th>Usuario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Contrato.pdf</td>
+                        <td>2</td>
+                        <td><span class="status aprobado">Aprobado</span></td>
+                        <td>Admin</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Aprobar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Informe.docx</td>
+                        <td>1</td>
+                        <td><span class="status pendiente">Pendiente</span></td>
+                        <td>Usuario1</td>
+                        <td>
+                            <button>Ver</button>
+                            <button>Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bitácora -->
+        <section class="log">
+            <h2>Bitácora de Actividad</h2>
+
+            <ul>
+                <li>Admin subió "Contrato.pdf" (Versión 2)</li>
+                <li>Usuario1 editó "Informe.docx"</li>
+                <li>Admin aprobó "Contrato.pdf"</li>
+            </ul>
+        </section>
+
+    </main>
+
 </div>
-
-<header>
-    <h1>Plataforma de Gestión Documental</h1>
-    <p>Control de versiones, permisos y flujo de aprobación</p>
-</header>
-
-<nav>
-    <ul>
-        <li>Inicio</li>
-        <li>Documentos</li>
-        <li>Subir</li>
-        <li>Usuarios</li>
-    </ul>
-</nav>
-
-<!-- Subida de documentos -->
-<section class="upload">
-    <h2>Subir Documento</h2>
-    <input type="file">
-    <button>Subir</button>
-</section>
-
-<!-- Gestión de documentos -->
-<section class="documents">
-    <h2>Gestión de Documentos</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Documento</th>
-                <th>Versión</th>
-                <th>Estado</th>
-                <th>Usuario</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Contrato.pdf</td>
-                <td>2</td>
-                <td><span class="status aprobado">Aprobado</span></td>
-                <td>Admin</td>
-                <td>
-                    <button>Ver</button>
-                    <button>Aprobar</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Informe.docx</td>
-                <td>1</td>
-                <td><span class="status pendiente">Pendiente</span></td>
-                <td>Usuario1</td>
-                <td>
-                    <button>Ver</button>
-                    <button>Editar</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<!-- Bitácora -->
-<section class="log">
-    <h2>Bitácora de Actividad</h2>
-
-    <ul>
-        <li>Admin subió "Contrato.pdf" (Versión 2)</li>
-        <li>Usuario1 editó "Informe.docx"</li>
-        <li>Admin aprobó "Contrato.pdf"</li>
-    </ul>
-</section>
 
 </body>
 </html>
