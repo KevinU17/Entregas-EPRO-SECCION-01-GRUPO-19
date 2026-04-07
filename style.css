@@ -178,3 +178,40 @@ button:hover {
     background: orange;
     color: white;
 }
+
+/* ================= TABLA DE DOCUMENTOS ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #1e2a38;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ================= BITÁCORA ================= */
+
+.log ul {
+    list-style: none;
+    padding: 0;
+}
+
+.log li {
+    background: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
